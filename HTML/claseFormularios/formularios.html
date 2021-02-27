@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selec y List para formularios</title>
+</head>
+<body>
+    <main>
+        <input list="cursos"> <!--Vamos a crear un formulario que arroje los datos de una lista, y que a la vez permita buscar la información escribiendola en el cuadro de texto-->
+        <datalist id="cursos"> <!--El id del datalist debe hacer match con el input list-->
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Python"></option>
+            <option value="Django"></option>
+        </datalist>
+
+        <!--Con la opción "select" creamos igualmente una lista de acceso al usuario, pero ésta no permite escribir valores, solo buscar con scroll en la lista-->
+        <!-- <select name="cursos2" id=""> 
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Python">PYTHON</option>
+        </select> -->
+    </main>
+    <section><!--Por último cabe mencionar que existen 2 tipos de botones-->
+        <input type="submit"><!--Submit, que ya conocemos, sirve para capturar los datos de formularios-->
+        <button>Soy un botón</button><!--Y button, que puede ser utilizado de manera mas dinámica, y tiende a utilizarse más para implementar script en la página web-->
+    </section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Llamado de etiqueta */
+p{
+    color: brown;
+    background-color: salmon;
+    font-size: 40px;
+}
+
+
+/* Llamado de clase */
+.parrafo{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+/* ID */
+#parrafoID{
+    color: chartreuse;
+    background-color: green;
+    font-size: 50 px;
+}

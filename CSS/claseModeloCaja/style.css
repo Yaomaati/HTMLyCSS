@@ -1,0 +1,27 @@
+/*Esta opción afecta de manera global a la página, es recomendable usar esta configuración inicial en todos los proyectos para que la página se ajuste automáticamente a la pantalla*/
+*{  
+    box-sizing: border-box; /*Esta opción ajusta automáticamente el elemento en el que estemos trabajando para que tome en cuenta el padding y el borde. Es decir, se adapta al espacio total disponible, ni mas ni menos.*/
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: coral;
+}
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px; /*El padding se modificará dependiendo de que tan especificos seamos al dar los parametros*/
+}
+
+/* Existe un concepto llamado herencia, en el caso de CSS, ésta herencia se aplicará entorno a las caracteristicas del elemento mas cercano, o al contenedor "padre"
+Podemos entender como contenedor padre a aquél en el cuál se encuentra nuestro modificador.
+Por ejemplo si tenemos un parrajo contenido en una sección, y aplicamos cambios a esa sección. Al utilizar la herencia en el parrafo, aquellos parametros 
+que utilizamos para modificar la sección bajaran a ese parrafo. */

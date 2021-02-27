@@ -1,0 +1,44 @@
+/* Podemos modificar nuestro archivo usando el nombre de la etiqueta directamente
+header {
+    color: brown;
+    background-color: coral;
+    font-size: large;
+}
+
+/* Usando clases. Debe iniciarse con un punto '.' y en index se llamará usando solo el nombre de la clase, sin el punto */
+/* .cabecera {
+    color: chocolate;
+} */
+
+
+/* ID En este caso utilizaremos '#' para crear los estilos */
+/* #listas {
+    color: violet;
+    padding-left: 0px;
+    margin-top: 10px;
+    list-style: none;
+    
+}  */
+
+header {
+    font-size: 30px;
+}
+
+body {
+    color: green;
+    background-color: brown;
+}
+
+.main-list__items{
+    color: coral;
+    list-style: none;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.main-list__subItems{
+    color: coral;
+    list-style: none;
+    padding-left: 0px;
+    font-size: 15px;
+}
