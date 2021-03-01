@@ -1,0 +1,40 @@
+*{
+    background-color: grey;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+h1{
+    color: brown;
+    font-family: serif;
+    margin: 10px;
+}
+
+#page-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tittle{
+    font-size: 18px;
+    font-family: monospace; /*Aquí llamamos un tipo de fuente a través de una clase, pero notese que hay un ID que tambien esta modificando la fuente*/
+                            /*Por lo que aunque la fuente esta siendo llamada por nuestra clase, NO se verá reflejada, pues tiene menor prioridad que los estilos llamados por el ID */
+}
+
+#main-nav{
+    margin-top: 10px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li{ /*Recordemos que para utilizar la herencia simplemente hay que llamar a nuestra clase o ID y darle como sub-nombre la etiqueta que querramos editar, en este caso el elemento de la lista (li)*/
+    display: inline-block;
+}
+
+#main-nav a{
+    color: white;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}

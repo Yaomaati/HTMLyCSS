@@ -1,0 +1,35 @@
+/* Modificamos los estilos generales de la lista */
+.main-nav{
+    margin-top: 10px;
+    list-style: none; /*Con list-style, cambiamos los decorados de una lista en HTML*/
+    padding-left: 0px;
+    background-color: black;
+}
+
+/* Ahora tratamos a cada elemento de la lista con un parametro en específico. En este caso cambiamos la alineación.
+   Ya que por defecto las listas se despliegan en cascada, y nosotros queremos una barra de navegación horizontal */
+.main-nav__item{
+    display: inline-block;
+}
+
+/* Por último utilizaremos la especifidad de CSS haciendo que se modifique un parametro especifico de nuestras etiquetas
+   En éste caso como tenemos hipervinculos en nuestra lista, serán esos hipervinculos los que modificaremos */
+.main-nav__item a{ /*Recordemos que <a> es la etiqueta usada para crear hipervinculos*/
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* Aquí entramos a las pseudo-clases que actuarán sobre ciertos estados de los elementos de la página */
+.main-nav__item a:hover{ /*Hover es el evento de poner el mouse sobre nuestro elemento*/
+    color: pink;
+}
+.main-nav__item a:active{ /*Active es el evento de hacer 'click' sobre el hipervinculo o botón*/
+    color: red; 
+}
+
+/* Utilizamos los pseudo-elementos para añadir personalización a una parte de un elemento */
+.main-nav__item a::after{
+    content: "|";
+}
